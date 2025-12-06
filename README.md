@@ -72,35 +72,6 @@ FactGuard employs a **Teacher-Student** paradigm using knowledge distillation:
 - **BoolQ** — Yes/no questions requiring passage reasoning
 - **LIAR** — Real-world political statements (most challenging)
 
-## Installation
-
-### Prerequisites
-- Python 3.8+
-- CUDA-compatible GPU (recommended)
-- Google Colab or local environment with GPU
-
-### Setup
-
-```bash
-# Install dependencies
-pip install duckduckgo-search langchain-community
-pip install -U ddgs
-pip install datasets==3.6.0
-pip install -U bitsandbytes accelerate
-pip install -U transformers
-pip install trl peft
-```
-
-### Environment Variables
-
-Set the following API keys (if using Google Colab, store in Colab secrets):
-
-```python
-import os
-os.environ['GEMINI_API_KEY'] = 'your-gemini-api-key'
-os.environ['HF_TOKEN'] = 'your-huggingface-token'
-```
-
 ## Quick Start
 
 ### Load a Pre-trained FactGuard Model
